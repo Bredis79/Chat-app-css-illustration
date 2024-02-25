@@ -261,7 +261,7 @@ p.small {
 }
 
 /* Hide the browser's default radio button */
-input#circle {
+input.circle {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -284,12 +284,12 @@ input#circle {
 }
 
 /* On mouse-over, add a grey background color */
-input#circle:hover~.checkmark {
+input.circle:hover~.checkmark {
     background-color: var(--clr--White);
 }
 
 /* When the radio button is checked, add a blue background */
-input#circle:checked~.checkmark {
+input.circle:checked~.checkmark {
     background-color: var(--clr--White);
 }
 
@@ -301,7 +301,7 @@ input#circle:checked~.checkmark {
 }
 
 /* Show the indicator (dot/circle) when checked */
-input#circle:checked~.checkmark:after {
+input.circle:checked~.checkmark:after {
     display: block;
 }
 
